@@ -1,4 +1,4 @@
-/* Container */
+
 .details-container {
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +9,7 @@
    background: transparent;
 }
 
-/* Card */
+
 .details-card {
   width: 320px;
   background: rgba(255, 255, 255, 0.03);
@@ -21,14 +21,14 @@
   color: #fff;
 }
 
-/* Hover glow */
+
 .details-card:hover {
   transform: translateY(-10px) scale(1.02);
   border-color: #00d4ff;
   box-shadow: 0 0 25px rgba(0, 212, 255, 0.3);
 }
 
-/* Title */
+
 .details-card h2 {
   text-align: center;
   margin-bottom: 15px;
@@ -36,19 +36,17 @@
   font-size: 22px;
 }
 
-/* Text */
+
 .details-card p {
   margin: 6px 0;
   font-size: 14px;
   color: #ccc;
 }
 
-/* Highlight labels */
 .details-card p strong {
   color: #ffffff;
 }
 
-/* Different glow for second card */
 .details-card:nth-child(2):hover {
   border-color: orange;
   box-shadow: 0 0 25px rgba(255, 165, 0, 0.4);
