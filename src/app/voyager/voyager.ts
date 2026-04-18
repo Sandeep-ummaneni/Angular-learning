@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-voyager',
-  imports: [],
+  imports: [CommonModule],
   standalone:true,
   templateUrl: './voyager.html',
   styleUrl: './voyager.css',
@@ -31,5 +32,11 @@ export class Voyager {
     mission: 'Grand Tour → ISM study',
   }
   ]
+
+  showDetails: boolean[] = [false, false];
+
+  toggleDetails(index: number) {
+  this.showDetails[index] = !this.showDetails[index];
+}
 }
 

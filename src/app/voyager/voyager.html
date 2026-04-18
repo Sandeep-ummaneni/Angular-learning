@@ -1,5 +1,5 @@
 <div class="details-container">
-  @for (details of voyagers; track details.id) {
+  @for (details of voyagers; track details.id; let i = $index) {
     <div class="details-card">
 
       <h2>{{ details.name }}</h2>
@@ -7,11 +7,25 @@
       <p><strong>Launched:</strong> {{ details.launched }}</p>
       <p><strong>Status:</strong> {{ details.status }}</p>
       <p><strong>Location:</strong> {{ details.location }}</p>
-      <p><strong>Distance (AU):</strong> {{ details.distanceAU }}</p>
+      <!-- <p><strong>Distance (AU):</strong> {{ details.distanceAU }}</p>
       <p><strong>Speed:</strong> {{ details.speed }}</p>
       <p><strong>Power Left:</strong> {{ details.powerLeft }}</p>
-      <p><strong>Mission:</strong> {{ details.mission }}</p>
+      <p><strong>Mission:</strong> {{ details.mission }}</p> -->
 
+      @if (showDetails[i]) {
+  <div>
+    <p><strong>Distance (AU):</strong> {{ details.distanceAU }}</p>
+    <p><strong>Speed:</strong> {{ details.speed }}</p>
+    <p><strong>Power Left:</strong> {{ details.powerLeft }}</p>
+    <p><strong>Mission:</strong> {{ details.mission }}</p>
+  </div>
+}
+ <button (click)="toggleDetails(i)" class="toggle-btn">
+        {{ showDetails[i] ? 'Hide Details' : 'Show More Details' }}
+      </button>
     </div>
+   
+    
   }
+  
 </div>

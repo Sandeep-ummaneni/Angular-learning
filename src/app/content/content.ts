@@ -9,5 +9,4 @@ import {Voyager} from '../voyager/voyager';
 })
 export class Contentcomponent {
 
-
 }
