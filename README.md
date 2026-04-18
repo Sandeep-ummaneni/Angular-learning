@@ -6,7 +6,7 @@ This repository contains my Angular learning projects.
 
 * Built using Angular
 * Tracks space missions like Voyager
-* Includes components and a for loop
+* Includes components and a for loop and if condition rendering control flow
 
 ## 🛠️ Tech Stack
 
