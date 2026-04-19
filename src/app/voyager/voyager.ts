@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-voyager',
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule],
   standalone:true,
   templateUrl: './voyager.html',
   styleUrl: './voyager.css',
@@ -19,6 +20,8 @@ export class Voyager {
     speed: '17.0 km/s',
     powerLeft: '~249 W',
     mission: 'Planetary flyby → ISM study',
+    planetsflyby:'Visited Jupiter & Saturn',
+
   },
   {
     id: 'v2',
@@ -30,6 +33,7 @@ export class Voyager {
     speed: '15.4 km/s',
     powerLeft: '~233 W',
     mission: 'Grand Tour → ISM study',
+    planetsflyby:'Visited Uranus & Neptune',
   }
   ]
 
@@ -37,6 +41,8 @@ export class Voyager {
 
   toggleDetails(index: number) {
   this.showDetails[index] = !this.showDetails[index];
+
+
 }
 }
 
