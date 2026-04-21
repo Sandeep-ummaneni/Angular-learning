@@ -1,7 +1,7 @@
 <div class="details-container">
   @for (details of voyagers; track details.id; let i = $index) {
     <div class="details-card">
-      <h2>{{ details.name }}</h2>
+      <h2>{{ details.name | uppercase}}</h2>
 
       <p><strong>Launched:</strong> {{ details.launched }}</p>
       <p><strong>Status:</strong> {{ details.status }}</p>
