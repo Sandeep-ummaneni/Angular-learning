@@ -6,13 +6,18 @@
       <p><strong>Launched:</strong> {{ details.launched | date}}</p>
       <p><strong>Status:</strong> {{ details.status }}</p>
       <p><strong>Location:</strong> {{ details.location }}</p>
-
-      @if (showDetails[i]) {
-  <div>
-    <p><strong>Distance (AU):</strong> {{ details.distanceAU }}</p>
+   
+      <ng-template #info>
+       <p><strong>Distance (AU):</strong> {{ details.distanceAU }}</p>
     <p><strong>Speed:</strong> {{ details.speed }}</p>
     <p><strong>Power Left:</strong> {{ details.powerLeft }}</p>
     <p><strong>Mission:</strong> {{ details.mission }}</p>
+
+</ng-template>
+      @if (showDetails[i]) {
+  <div>
+   <ng-container *ngTemplateOutlet="info"></ng-container>
+   
     <div  [class]="details.id == 'v1' ? 'voyager1' : 'voyager2'">
      @switch (details.mission) {
 
@@ -27,6 +32,20 @@
          <small>{{details.planetsflyby}}</small>
     }
    }
+   @switch (details.missionType) {
+
+  @case ('planetary') {
+    <h3>🪐 Planetary Mission</h3>
+  }
+
+  @case ('grandTour') {
+    <h3>🚀 Grand Tour Mission</h3>
+  }
+
+}
+<ng-template>
+  <p>Hello World</p>
+</ng-template>
    </div>
   </div>
 }

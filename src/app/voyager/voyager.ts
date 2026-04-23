@@ -21,6 +21,7 @@ export class Voyager {
     powerLeft: '~249 W',
     mission: 'Planetary flyby → ISM study',
     planetsflyby:'Visited Jupiter & Saturn',
+    missionType: 'planetary' 
 
   },
   {
@@ -34,15 +35,15 @@ export class Voyager {
     powerLeft: '~233 W',
     mission: 'Grand Tour → ISM study',
     planetsflyby:'Visited Uranus & Neptune',
+    missionType: 'grandTour' 
   }
   ]
-
+  
   showDetails: boolean[] = [false, false];
 
   toggleDetails(index: number) {
   this.showDetails[index] = !this.showDetails[index];
-
-
+   
 }
 }
 
