@@ -13,7 +13,7 @@ export class Voyager {
   {
     id: 'v1',
     name: 'Voyager 1',
-    launched: 'Sept 5, 1977',
+    launched: '1977-09-05',
     status: 'Active',
     location: 'Interstellar space',
     distanceAU: '163.6 AU',
@@ -26,7 +26,7 @@ export class Voyager {
   {
     id: 'v2',
     name: 'Voyager 2',
-    launched: 'Aug 20, 1977',
+    launched: '1977-08-20',
     status: 'Active',
     location: 'Interstellar space',
     distanceAU: '135.7 AU',

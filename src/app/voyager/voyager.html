@@ -3,7 +3,7 @@
     <div class="details-card">
       <h2>{{ details.name | uppercase}}</h2>
 
-      <p><strong>Launched:</strong> {{ details.launched }}</p>
+      <p><strong>Launched:</strong> {{ details.launched | date}}</p>
       <p><strong>Status:</strong> {{ details.status }}</p>
       <p><strong>Location:</strong> {{ details.location }}</p>
 
