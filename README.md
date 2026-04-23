@@ -6,7 +6,8 @@ This repository contains my Angular learning projects.
 
 * Built using Angular
 * Tracks space missions like Voyager
-* Includes components and a for loop and if condition rendering control flow and pipes
+* Includes components, control flow with @for and @if  for dynamic rendering, pipes for data transformation, and template features such as ng-content, ng-template, and ngTemplateOutlet.
+
 
 ## 🛠️ Tech Stack
 
