@@ -1,15 +1,20 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import  {VoyagerCard} from '../voyager-card/voyager-card';
 @Component({
   selector: 'app-voyager',
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule,FormsModule,VoyagerCard],
   standalone:true,
   templateUrl: './voyager.html',
   styleUrl: './voyager.css',
 })
+
+
+
 export class Voyager {
-  voyagers = [
+
+voyagers = [
   {
     id: 'v1',
     name: 'Voyager 1',
@@ -20,9 +25,19 @@ export class Voyager {
     speed: '17.0 km/s',
     powerLeft: '~249 W',
     mission: 'Planetary flyby → ISM study',
-    planetsflyby:'Visited Jupiter & Saturn',
-    missionType: 'planetary' 
-
+    planetsFlyby: 'Visited Jupiter & Saturn',
+    missionType: 'planetary',
+    timeline: [
+      {
+        planet: 'Interstellar Space',
+        icon: '✨',
+        date: 'Aug 25, 2012',
+        distanceKm: 0,
+        discovery:
+          'Became the first human-made object to enter interstellar space, crossing the heliopause and entering the region between stars.',
+        status: 'Active',
+      },
+    ],
   },
   {
     id: 'v2',
@@ -34,16 +49,26 @@ export class Voyager {
     speed: '15.4 km/s',
     powerLeft: '~233 W',
     mission: 'Grand Tour → ISM study',
-    planetsflyby:'Visited Uranus & Neptune',
-    missionType: 'grandTour' 
-  }
-  ]
-  
+    planetsFlyby: 'Visited Uranus & Neptune',
+    missionType: 'grandTour',
+    timeline: [
+      {
+        planet: 'Interstellar Space',
+        icon: '✨',
+        date: 'Nov 5, 2018',
+        distanceKm: 0,
+        discovery:
+          'Second human-made object to cross into interstellar medium, over 20 billion km from the Sun and still transmitting data.',
+        status: 'Active',
+      },
+    ],
+  },
+];
   showDetails: boolean[] = [false, false];
 
   toggleDetails(index: number) {
   this.showDetails[index] = !this.showDetails[index];
+  
    
 }
 }
-

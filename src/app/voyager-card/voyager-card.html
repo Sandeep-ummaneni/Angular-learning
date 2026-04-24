@@ -1,0 +1,25 @@
+<div class="timeline" #container>
+  <h4>Mission Timeline</h4>
+
+  @for (item of timeline; track item.planet; let last = $last) {
+    <div class="timeline-item" >
+
+      <div class="dot"></div>
+      @if (!last) { <div class="line"></div> }
+
+      <div class="item-body">
+        <span>{{ item.icon }}</span>
+        <div>
+          <strong>{{ item.planet }}</strong>
+          <span class="date">{{ item.date }}</span>
+          <p>{{ item.discovery }}</p>
+          <span class="badge" [class.active]="item.status === 'Active'">
+            {{ item.status }}
+          </span>
+        </div>
+      </div>
+
+    </div>
+  }
+
+</div>

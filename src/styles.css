@@ -10,5 +10,9 @@ body {
   background-position: center;    
   background-size: cover;       
   height: 100vh;
-  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #e5e7eb;
+  min-height: 100vh;
 }
+
+
