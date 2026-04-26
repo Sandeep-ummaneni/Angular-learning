@@ -14,6 +14,12 @@ import  {VoyagerCard} from '../voyager-card/voyager-card';
 
 export class Voyager {
 
+   onMissionSelect(mission: any) {
+  console.log('Mission selected:', mission);
+  alert(`Selected: ${mission.planet}`);
+}
+
+
 voyagers = [
   {
     id: 'v1',
@@ -67,8 +73,6 @@ voyagers = [
   showDetails: boolean[] = [false, false];
 
   toggleDetails(index: number) {
-  this.showDetails[index] = !this.showDetails[index];
-  
-   
+  this.showDetails[index] = !this.showDetails[index];  
 }
 }

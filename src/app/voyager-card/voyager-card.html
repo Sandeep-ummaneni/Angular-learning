@@ -2,7 +2,7 @@
   <h4>Mission Timeline</h4>
 
   @for (item of timeline; track item.planet; let last = $last) {
-    <div class="timeline-item" >
+    <div class="timeline-item" (click)="onSelectMission(item)">
 
       <div class="dot"></div>
       @if (!last) { <div class="line"></div> }

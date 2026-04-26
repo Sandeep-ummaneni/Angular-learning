@@ -16,8 +16,12 @@ export class VoyagerCard implements AfterViewInit {
   @ViewChild('container') container!: ElementRef;
 
   ngAfterViewInit() {
+    
     console.log('Timeline loaded:', this.timeline); 
   }
 
+  onSelectMission(mission: any) {
+    this.missionSelect.emit(mission);
+  }
  
 }
