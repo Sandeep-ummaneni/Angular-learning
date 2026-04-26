@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class VoyagerCard implements AfterViewInit {
 
   @Input({ required: true }) timeline: any[] = [];
+  @Input() selectedPlanet: string | null = null;
   @Output() missionSelect = new EventEmitter<any>();
 
   @ViewChild('container') container!: ElementRef;

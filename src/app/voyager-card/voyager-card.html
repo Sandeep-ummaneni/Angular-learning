@@ -2,7 +2,7 @@
   <h4>Mission Timeline</h4>
 
   @for (item of timeline; track item.planet; let last = $last) {
-    <div class="timeline-item" (click)="onSelectMission(item)">
+    <div class="timeline-item"   [class]="selectedPlanet === item.date ? 'item-active' : 'item-other'" (click)="onSelectMission(item)">
 
       <div class="dot"></div>
       @if (!last) { <div class="line"></div> }
@@ -10,7 +10,9 @@
       <div class="item-body">
         <span>{{ item.icon }}</span>
         <div>
-          <strong>{{ item.planet }}</strong>
+          Distance: {{ item.distanceAU }} AU 
+          ({{ item.distanceKm / 1_000_000_000 | number:'1.0-1' }} billion km)
+          <strong>{{ item.space }} : </strong> 
           <span class="date">{{ item.date }}</span>
           <p>{{ item.discovery }}</p>
           <span class="badge" [class.active]="item.status === 'Active'">
