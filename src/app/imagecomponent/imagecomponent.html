@@ -1,0 +1,6 @@
+<div *ngIf="imageData$ | async as data">
+  <div *ngFor="let img of data.voyagerImages">
+    <h4>{{ img.title }}</h4>
+    <img [src]="img.imageUrl" width="250" />
+  </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "voyagerImages": [
+    {
+      "id": 1,
+      "title": "Voyager 1 Spacecraft",
+      "imageUrl": "https://media.gettyimages.com/id/164430702/photo/a-nasa-image-of-one-of-the-voyager-space-probes-voyager-1-and-its-identical-sister-craft.jpg?s=612x612&w=0&k=20&c=KiPf3awDzQGB4U6oCKYnh2K_nZvRK3f_J67-VKZ31JI="
+    },
+    {
+      "id": 2,
+      "title": "Voyager Golden Record",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/The_Sounds_of_Earth_Record_Cover_-_GPN-2000-001978.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Voyager Trajectory",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Voyager_spacecraft_trajectory.png"
+    },
+    {
+      "id": 4,
+      "title": "Voyager Interstellar Mission",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Voyager_Interstellar_Mission.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Voyager Jupiter Flyby",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Voyager_1_Jupiter.jpg"
+    }
+  ]
+}

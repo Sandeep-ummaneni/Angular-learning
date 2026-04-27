@@ -66,3 +66,6 @@
  */
 
  
+.menu {
+  display: flex;
+}

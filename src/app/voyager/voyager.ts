@@ -1,10 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import  {VoyagerCard} from '../voyager-card/voyager-card';
 @Component({
   selector: 'app-voyager',
-  imports: [CommonModule,FormsModule,VoyagerCard],
+  imports: [CommonModule,VoyagerCard],
   standalone:true,
   templateUrl: './voyager.html',
   styleUrl: './voyager.css',

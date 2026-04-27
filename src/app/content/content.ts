@@ -1,9 +1,11 @@
 import { Component, ContentChild, ElementRef, Input, ViewChild } from '@angular/core';
-import {Voyager} from '../voyager/voyager';
+ //import {Voyager} from '../voyager/voyager';
+//import { Dashboard } from '../dashboard/dashboard';
+
 @Component({ 
   selector: 'app-content',
   standalone : true,
-   imports: [Voyager],
+   imports: [],
   templateUrl: './content.html',
   styleUrl: './content.css',
 })

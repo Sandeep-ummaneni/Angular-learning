@@ -17,3 +17,21 @@ background-color:transparent;
 .v2 {
   color: #ff7b00;
 } */
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+
+.menu {
+  display: flex;
+  gap:100px;
+  margin-left: 500px;
+}
+
+.menu h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
