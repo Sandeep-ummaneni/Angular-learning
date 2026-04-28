@@ -1,6 +1,23 @@
-<div *ngIf="imageData$ | async as data">
-  <div *ngFor="let img of data.voyagerImages">
+<!-- @if (imageData$ | async as data) {
+  <pre>{{ data | json }}</pre>   >
+
+  @for (img of data.voyagerImages; track img.id) {
     <h4>{{ img.title }}</h4>
     <img [src]="img.imageUrl" width="250" />
-  </div>
+  }
+} -->
+<div class="pale">
+  <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/wupToqz1e2g"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+  </iframe>
 </div>
+
+<div *ngFor="let img of images">
+  <h3>{{ img.title }}</h3>
+  <img [src]="img.imageUrl" width="200">
+</div>
+
