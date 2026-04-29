@@ -1,0 +1,8 @@
+<div class="news-grid">
+  @for (news of newsData; track news.id) {
+    <div class="news-card">
+      <img [src]="news.image">
+      <h3>{{ news.title }}</h3>
+    </div>
+  }
+</div>

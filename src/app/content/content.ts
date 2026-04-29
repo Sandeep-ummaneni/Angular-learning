@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef, Input, ViewChild } from '@angular/core';
+import { Component, ContentChild, ElementRef, Input, ViewChild, ViewEncapsulation } from '@angular/core';
  //import {Voyager} from '../voyager/voyager';
 //import { Dashboard } from '../dashboard/dashboard';
 
@@ -8,6 +8,7 @@ import { Component, ContentChild, ElementRef, Input, ViewChild } from '@angular/
    imports: [],
   templateUrl: './content.html',
   styleUrl: './content.css',
+ 
 })
 export class Contentcomponent {
 

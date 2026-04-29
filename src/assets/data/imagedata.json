@@ -2,127 +2,127 @@
   "voyagerImages": [
     {
       "id": 1,
-      "title": "Voyager 1 Spacecraft",
+      "title": "Voyager 1 Deep Space Probe",
       "imageUrl": "https://media.gettyimages.com/id/164430702/photo/a-nasa-image-of-one-of-the-voyager-space-probes-voyager-1-and-its-identical-sister-craft.jpg?s=612x612&w=0&k=20&c=KiPf3awDzQGB4U6oCKYnh2K_nZvRK3f_J67-VKZ31JI="
     },
     {
       "id": 2,
-      "title": "Voyager Golden Record",
+      "title": "Voyager Golden Record Message",
       "imageUrl": "https://media.gettyimages.com/id/164430723/photo/a-gold-record-in-its-cover-attached-to-a-voyager-space-probe-usa-circa-1977-voyager-1-and-its.jpg?s=612x612&w=0&k=20&c=NuWMWSSRs6ySizFOFMLCg1Q1YYHJRlziYFNu97ODvug="
     },
     {
       "id": 3,
-      "title": "Voyager Trajectory",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Voyager_spacecraft_trajectory.png"
+      "title": "Voyager Grand Tour Trajectory",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Voyager_Path.jpg"
     },
     {
       "id": 4,
-      "title": "Voyager Interstellar Mission",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Voyager_Interstellar_Mission.jpg"
+      "title": "Sounds of Earth Golden Record" ,
+      "imageUrl": "https://media.gettyimages.com/id/615294032/photo/the-sounds-of-earth-record-was-placed-aboard-voyager-2-scheduled-for-launch-on-august-20-1977.jpg?s=612x612&w=0&k=20&c=zj2YMqqHTOKcqHyD-FGFl04eAwcqN2L1ZcL0MyTxleE="
     },
     {
       "id": 5,
-      "title": "Voyager Jupiter Flyby",
+      "title": "Voyager Jupiter Close Flyby",
       "imageUrl": "https://media.gettyimages.com/id/463911413/photo/the-planet-jupiter-1979-taken-from-voyager-1-at-20-million-kilometres-this-pictures-shows-the.jpg?s=612x612&w=0&k=20&c=rvshFQ3S3az23pqB29wqq1qTWFo7oejm9jjmE-G_kRM="
     },
     {
       "id": 6,
-      "title": "Voyager lauch rocket",
+      "title": "Voyager Launch on Titan Rocket",
       "imageUrl": "https://media.gettyimages.com/id/1371449464/photo/voyager-2-aboard-titan-centaur-7-lfited-off-on-august-20-1977-a-mission-to-the-outer-planet.jpg?s=612x612&w=0&k=20&c=sLMNAyvLxiszOaGVbs_ylTei2L8Xyq37S6tUPT4W9_Y="
     },
      {
       "id": 7,
-      "title": "Voyager in lab",
+      "title": "Voyager Assembly in Laboratory",
       "imageUrl": "https://media.gettyimages.com/id/164430716/photo/a-technician-attaches-a-gold-record-to-a-voyager-space-probe-usa-circa-1977-voyager-1-and-its.jpg?s=612x612&w=0&k=20&c=T1cDBre6yz-_g2n2jLDSyVSkwH3srP1z-slDtnH6Vug="
     },
     {
       "id": 8,
-      "title": "Voyager2 neptune flyby ",
+      "title": "Voyager 2 Neptune Encounter",
       "imageUrl": "https://media.gettyimages.com/id/615297714/photo/false-color-composite-photograph-of-neptune-produced-from-images-taken-by-voyager-2-in-1989.jpg?s=612x612&w=0&k=20&c=kq8RAbl-Hr8P9J16EzbLwzJn2Vw4J5p8MwvXemGQaLc="
     },
      {
       "id": 9,
-      "title": "Voyager2 uranus flyby ",
+      "title": "Voyager 2 Uranus Flyby",
       "imageUrl": "https://media.gettyimages.com/id/1085292530/photo/uranus-with-satellites-miranda-ariel-and-umbriel-from-voyager-2-24-january-1986-composite-of.jpg?s=612x612&w=0&k=20&c=cydzuqAbdkbGtOFJ-AZky7sRMRxqw6TvTReB8DxkgAg="
     },
      {
       "id": 10,
-      "title": "Pale Blue Dot ",
+      "title": "Pale Blue Dot Earth View",
       "imageUrl": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/64DB/production/_110891852_pia23645_hires.jpg.webp"
     },
     {
       "id": 11,
-      "title": "Voyager Golden Record",
+      "title": "Golden Record Cover Diagram",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/The_Sounds_of_Earth_Record_Cover_-_GPN-2000-001978.jpg/250px-The_Sounds_of_Earth_Record_Cover_-_GPN-2000-001978.jpg"
     },
      {
       "id": 12,
-      "title": "Voyager spacecraft",
+      "title": "Voyager in Interstellar Space",
       "imageUrl": "https://media.gettyimages.com/id/1128674992/vector/voyager-leaving-solar-system-illustration.jpg?s=1024x1024&w=gi&k=20&c=RnG5J23DpDN1DJV2r71uS-s7j6wVXVVIc6GFcWk0Aj0="
     },
      {
       "id": 13,
-      "title": "Voyager Golden decoding",
+      "title": "Golden Record Decoding Guide",
       "imageUrl": "https://science.nasa.gov/wp-content/uploads/2024/03/voyager-record-diagram.jpeg"
     }, {
       "id": 14,
-      "title": "Voyager Golden Record explaintion",
+      "title": "Golden Record Instruction Panel",
       "imageUrl": "https://science.nasa.gov/wp-content/uploads/2024/04/cover-diagram-large.jpg?resize=1200,920"
     },
      {
       "id": 15,
-      "title": "The Voyager spacecraft showcasing where the Golden Record is mounted",
+      "title": "Voyager with Mounted Golden Record",
       "imageUrl": "https://science.nasa.gov/wp-content/uploads/2024/03/voyager-record-location.jpeg"
     },
      {
       "id": 16,
-      "title": "Voyager heliosphere",
+      "title": "Voyager Crossing the Heliosphere",
       "imageUrl": "https://science.nasa.gov/wp-content/uploads/2024/04/jpegpia22566.jpg?w=1280",
       "description" : "The heliosphere is a vast bubble around the Sun created by solar wind, extending beyond Pluto and shielding our solar system from interstellar radiation."
     },
      {
       "id": 17,
-      "title": "The interstellar medium",
+      "title": "Journey Through Interstellar Medium",
       "imageUrl": "https://i.redd.it/30no7lkn1r771.jpg"
     },
      {
       "id": 18,
-      "title": "Voyager path",
+      "title": "Voyager Planetary Mission Path",
       "imageUrl": "https://external-preview.redd.it/voyager-1-and-voyager-2-are-still-alive-after-nearly-43-v0-OcnDC6aqY68bGX7c4iiSYZxlQt_y5dA12w37acTy310.jpg?width=640&crop=smart&auto=webp&s=3143bf52cd1bdcef2d96e1296bc3ae9a012d26b5"
     },
      {
       "id": 19,
-      "title": "saturn flyby",
+      "title": "Voyager Saturn Ring Flyby",
       "imageUrl": "https://science.nasa.gov/wp-content/uploads/2024/04/pia00335.jpg"
     },
      {
       "id": 20,
-      "title": "jupiter timelapse",
+      "title": "Jupiter Atmospheric Motion Timelapse",
       "imageUrl": "https://science.nasa.gov/wp-content/uploads/2024/04/pia02855.gif?w=600"
     },
      {
       "id": 21,
-      "title": "venus original photos by soviet spacecraft",
+      "title": "Venus Surface by Soviet Lander",
       "imageUrl": "https://i.redd.it/wm7fc7vebbb01.jpg"
     },
      {
       "id": 22,
-      "title": "Titan moon",
-      "imageUrl": "https://i.redd.it/wm7fc7vebbb01.jpg"
+      "title": "Titan Moon Surface View",
+      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/p/i/a/0/PIA07232.jpg?w=546&h=693&fit=clip&crop=faces%2Cfocalpoint"
     },
      {
       "id": 23,
-      "title": "jupiter with moons",
+      "title": "Jupiter and Galilean Moons",
       "imageUrl": "https://science.nasa.gov/wp-content/uploads/2024/04/pia00144.jpg?w=820"
     },
      {
       "id": 24,
-      "title": "aerial moon",
+      "title": "Ariel Moon of Uranus",
       "imageUrl": "https://science.nasa.gov/wp-content/uploads/2024/04/pia00037.jpg?w=800"
     },
      {
       "id": 25,
-      "title": "neptune clouds",
+      "title": "Neptune High Altitude Clouds",
       "imageUrl": "https://images-assets.nasa.gov/image/PIA00047/PIA00047~orig.jpg?w=430&h=465&fit=clip&crop=faces%2Cfocalpoint"
     }
   ]
