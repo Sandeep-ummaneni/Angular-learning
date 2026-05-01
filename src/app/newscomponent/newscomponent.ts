@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import news from '../../assets/data/news.json'
 
 @Component({
   selector: 'app-newscomponent',
@@ -8,14 +9,16 @@ import { Component } from '@angular/core';
   styleUrl: './newscomponent.css',
 })
 export class Newscomponent {
- 
-newsData: any[] = [];
 
-constructor(private http: HttpClient) {}
 
-ngOnInit() {
-  this.http.get<any[]>('assets/data/imagedata.json').subscribe(data => {
-    this.newsData = data;
-  });
+  newsdetails = news.newsdata;
+selectedNews: any = null;
+
+openModal(news: any) {
+  this.selectedNews = news;
+}
+
+closeModal() {
+  this.selectedNews = null;
 }
 }

@@ -3,12 +3,11 @@ import { Component } from '@angular/core';
 // import { CommonModule } from '@angular/common';
  import {Voyager} from '../voyager/voyager';
  import { Contentcomponent } from '../content/content';
- import { Imagecomponent } from '../imagecomponent/imagecomponent';
-
+ 
 
 @Component({
   selector: 'app-dashboard',
-  imports: [Voyager,Spacecraft,Contentcomponent,Imagecomponent],
+  imports: [Voyager,Spacecraft,Contentcomponent],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

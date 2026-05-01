@@ -8,5 +8,5 @@ import { Newscomponent } from './newscomponent/newscomponent';
 export const routes: Routes = [
     { path: '', component: Dashboard },   
     { path: 'image', component: Imagecomponent },
-    {path: 'news', component: Newscomponent}
+    {path: 'news/:id', component: Newscomponent}
 ];

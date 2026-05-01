@@ -7,6 +7,72 @@
     "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/voyager/images/1_Voyager_artist_concept.jpg?w=1024&h=576&fit=crop&crop=faces%2Cfocalpoint",
     "url": "https://science.nasa.gov/blogs/voyager/2026/04/17/nasa-shuts-off-instrument-on-voyager-1-to-keep-spacecraft-operating/",
     "date": "2026-04-17"
+  },
+  {
+    "id": 2,
+    "title": "Vintage NASA: See Voyager’s 1990 ‘Solar System Family Portrait’ Debut",
+    "description": "In archival footage of a historic NASA news conference, the mission reveals history-making images of six planets in our solar system, including a tiny speck called Earth. This week marks 48 years since the Sept. 5, 1977, launch of NASA’s Voyager 1 spacecraft from Cape Canaveral, Florida, to study Jupiter and Saturn up close. Nearly[…]",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/voyager/images/1-main-ed%20stone%20voyager%20press%20conference%201990.png?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+    "url": "https://science.nasa.gov/blogs/voyager/2025/09/04/vintage-nasa-see-voyagers-1990-solar-system-family-portrait-debut/",
+    "date": "2025-09-04"
+  },
+  {
+    "id": 3,
+    "title": "NASA’s Voyager 1 Revives Backup Thrusters Before Command Pause",
+    "description": "The mission team wanted to fix the thrusters, deemed unusable decades ago, before the radio antenna that sends commands to the probe went offline for upgrades.",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/voyager/images/1-PIA26353-1-voyager%20spacecraft%20speeding%20through%20space%20(illustration).png?w=900&h=900&fit=clip&crop=faces%2Cfocalpoint",
+    "url": "https://science.nasa.gov/blogs/voyager/2025/05/14/nasas-voyager-1-revives-backup-thrusters-before-command-pause/",
+    "date": "2025-05-14"
+  },
+  {
+    "id": 4,
+    "title": "NASA Turns Off 2 Voyager Science Instruments to Extend Mission",
+    "description": "Mission engineers at NASA’s Jet Propulsion Laboratory in Southern California turned off the cosmic ray subsystem experiment aboard Voyager 1 on Feb. 25 and will shut off Voyager 2’s low-energy charged particle instrument on March 24.",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/voyager/images/1_Voyager_artist_concept.jpg?w=1024&h=576&fit=crop&crop=faces%2Cfocalpoint",
+    "url": "https://science.nasa.gov/blogs/voyager/2025/03/05/nasa-turns-off-2-voyager-science-instruments-to-extend-mission/",
+    "date": "2025-03-05"
+  },
+  {
+    "id": 5,
+    "title": "NASA’s Voyager 1 Resumes Regular Operations After Communications Pause",
+    "description": "Mission engineers at NASA’s Jet Propulsion Laboratory in Southern California turned off the cosmic ray subsystem experiment aboard Voyager 1 on Feb. 25 and will shut off Voyager 2’s low-energy charged particle instrument on March 24.",
+    "image": "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/03/voyager1.jpg?fit=1200%2C675&ssl=2",
+    "url": "https://science.nasa.gov/blogs/voyager/2024/11/26/nasas-voyager-1-resumes-regular-operations-after-communications-pause/",
+    "date": "2024-11-26"
+  },
+  {
+    "id": 6,
+    "title": "NASA Turns Off Science Instrument to Save Voyager 2 Power",
+    "description": "Mission engineers at NASA have turned off the plasma science instrument aboard the Voyager 2 spacecraft due to the probe’s gradually shrinking electrical power supply.",
+    "image": "https://science.nasa.gov/wp-content/uploads/2024/10/1-voyagerbeforelaunch.jpg?resize=1024,815",
+    "url": "https://science.nasa.gov/blogs/voyager/2024/10/01/nasa-turns-off-science-instrument-to-save-voyager-2-power/",
+    "date": "2024-10-01"
+  },
+  {
+    "id": 7,
+    "title": "Voyager 1 will reach one light-day from Earth in 2026",
+    "description": "Voyager 1, NASA’s deep-space probe, could soon become the first spacecraft to reach a historic milestone. In November 2026, the probe will be one light-day from Earth.",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/jpegpia17462-20251209144417720.jpg?c=original&q=w_1202,c_fill/f_avif",
+    "url": "https://edition.cnn.com/2025/12/09/science/voyager-1-light-day-earth",
+    "date": "2025-12-09"
+  },
+  {
+    "id": 8,
+    "title": "The biggest discoveries of Voyagers — NASA’s most distant explorers",
+    "description": "In 1977, NASA loaded two spacecraft, each the size of a Honda Civic, into a rocket and sent them off on a five-year mission to explore our solar system’s outer planets.",
+    "image": "https://www.snexplores.org/wp-content/uploads/sites/3/2025/01/1440_Voyager_Legacy_feat.jpg",
+    "url": "https://www.snexplores.org/article/voyagers-biggest-discoveries-nasa-space",
+    "date": "2025-01-09"
+  },
+  {
+    "id": 9,
+    "title": "Voyager 2 enters interstellar space after 41 years",
+    "description": "Mission engineers at NASA’s Jet Propulsion Laboratory in Southern California turned off the cosmic ray subsystem experiment aboard Voyager 1 on Feb. 25 and will shut off Voyager 2’s low-energy charged particle instrument on March 24.",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/06/pia22835.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint",
+    "url": "https://science.nasa.gov/missions/voyager-program/nasas-voyager-2-probe-enters-interstellar-space/",
+    "date": "2018-12-10"
   }
+  
+
   ]
 }

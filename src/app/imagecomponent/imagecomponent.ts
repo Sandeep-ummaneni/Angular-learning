@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 //import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-// import json from '../../assets/data/imagedata.json';
+import json from '../../assets/data/imagedata.json';
 import {VoyagerImage} from '../image'
 import { Observable } from 'rxjs';
 
@@ -16,13 +16,14 @@ export class Imagecomponent {
 
 
 
-  imageData$! : Observable<any>;
-  constructor (private images: VoyagerImage){
-    this.imageData$ = this.images.getimages();
-  }
+  // imageData$! : Observable<any>;
+  // constructor (private images: VoyagerImage){
+  //   this.imageData$ = this.images.getimages();
+  // }
 
 
 
- // images : any = json.voyagerImages;
+ images : any = json.voyagerImages;
+ 
 
 }

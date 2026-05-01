@@ -1,8 +1,32 @@
 <div class="news-grid">
-  @for (news of newsData; track news.id) {
-    <div class="news-card">
+  @for (news of newsdetails; track news.id) {
+    <div class="news-card" (click)="openModal(news)">
       <img [src]="news.image">
       <h3>{{ news.title }}</h3>
     </div>
   }
 </div>
+
+@if (selectedNews) {
+  <div class="overlay" (click)="closeModal()">
+
+    <div class="modal" (click)="$event.stopPropagation()">
+
+      <img [src]="selectedNews.image">
+
+      <h2>{{ selectedNews.title }}</h2>
+
+      <p>{{ selectedNews.description }}</p>
+
+      <div class="actions">
+        <a [href]="selectedNews.url" target="_blank">
+          Read Full →
+        </a>
+
+        <button (click)="closeModal()">Close</button>
+      </div>
+
+    </div>
+
+  </div>
+}

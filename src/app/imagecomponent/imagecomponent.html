@@ -17,18 +17,25 @@
 </div> -->
 
 <div class="image-container">
+  <div class="featured-image">
+    <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia23/pia23645/PIA23645.jpg?w=1024&h=1013&fit=crop&crop=faces%2Cfocalpoint" alt="paleBlueDot.title" class="featured-img" placeholder=""/>
+    <div class="featured-caption">
+      <h2> Pale Blue Dot</h2>
+       <p>
+        The Pale Blue Dot is a photo taken in 1990 by Voyager 1 from about 6 billion km away. Earth appears as a tiny blue speck in space.
+       </p>
+      <figcaption>“This is where we live — on a blue dot,” Sagan said, describing this Voyager image in which Earth appears as a pixel-size speck. “That’s where everyone you know and eve-ryone you have heard of and every human being who ever lived lived out their life. It’s a very small stage in a great cosmic arena.”</figcaption>
+      <small>NASA / Voyager 1</small>
+    </div>
+  </div>
+
+  <h2 class="section-title">More Voyager Images</h2>
   <div class="image-grid">
-    @if (imageData$ | async; as data ) {
-      @for (img of data.voyagerImages; track img.id) {
-
-        <div class="image-card">
-          <img [src]="img.imageUrl">
-          <h3>{{ img.title }}</h3>
-        </div>
-
-      }
-    }
+   @for (image of images; track image.id) {
+    <div class="image-card">
+      <img [src]="image.imageUrl" [alt]="image.title" />
+      <h3>{{ image.title }}</h3>
+    </div>
+  }
   </div>
 </div>
-
-<router-outlet></router-outlet>
