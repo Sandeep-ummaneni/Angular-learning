@@ -28,7 +28,7 @@
     "id": 4,
     "title": "NASA Turns Off 2 Voyager Science Instruments to Extend Mission",
     "description": "Mission engineers at NASA’s Jet Propulsion Laboratory in Southern California turned off the cosmic ray subsystem experiment aboard Voyager 1 on Feb. 25 and will shut off Voyager 2’s low-energy charged particle instrument on March 24.",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/voyager/images/1_Voyager_artist_concept.jpg?w=1024&h=576&fit=crop&crop=faces%2Cfocalpoint",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2026/04/STScI-01KM5VPG2R1WX1SY7ASDJ9JEV5.jpg?w=1024",
     "url": "https://science.nasa.gov/blogs/voyager/2025/03/05/nasa-turns-off-2-voyager-science-instruments-to-extend-mission/",
     "date": "2025-03-05"
   },
@@ -71,6 +71,29 @@
     "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/06/pia22835.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint",
     "url": "https://science.nasa.gov/missions/voyager-program/nasas-voyager-2-probe-enters-interstellar-space/",
     "date": "2018-12-10"
+  },
+  {
+    "title":"What did Voyager 2 capture in its last image before its cameras fell silent?",
+    "description": "This historic photograph became the last visual record from Voyager 2, taken before its cameras were permanently switched off to save the probe’s dwindling power.",
+    "image": "https://cdn1.wionews.com/prod/wion/images/2025/20250828/image-1756389021929.jpg",
+    "url":"https://www.wionews.com/photos/what-did-voyager-2-capture-in-its-last-image-before-shutting-down-forever-1756388914931",
+    "date":"2025-08-28"
+
+  },
+  {
+    "title":"Voyager 1 has sent a message from a strange location in space 20,000 lakh km away that's as hot as 50,000°C, but without fire",
+    "description":"NASA’s Voyager 1 and Voyager 2 spacecraft, launched in 1977, have identified a high-temperature region beyond the edge of the solar system. Scientists are now studying this area, nicknamed the firewall, which may lead to a new understanding of the solar system’s boundary and the magnetic connections between interstellar and solar space.",
+    "image":"https://img.etimg.com/thumb/msid-123115841,width-650,height-488,imgsize-62706,resizemode-75/voyager-1.jpg",
+    "url":"https://economictimes.indiatimes.com/news/new-updates/voyager-1-has-sent-a-message-from-a-strange-location-in-space-20000-lakh-km-away-thats-as-hot-as-50000c-but-without-fire/articleshow/123115247.cms?from=mdr",
+    "date":"2025-08-05"
+  },
+  {
+    "title":"Last image of Solar System taken by Voyager-2. It was over 4.7 billion km away",
+    "description":"Taken 36 years ago on August 28, 1989 this iconic image marked the final visual record sent back by Voyager 2 before its optical cameras were permanently shut off. Nasa shared the image to mark the anniversary.",
+    "image":"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202508/voyager-2-last-image-neptune-280605572-16x9_0.jpg?VersionId=xW7VNeRIA2mPe0WEGWLyHKN6IxKrZTtK&size=690:388",
+    "url":"https://www.indiatoday.in/science/story/last-image-of-solar-system-taken-by-voyager-2-it-was-over-47-billion-km-away-2778188-2025-08-28",
+    "date":"2025-08-28"
+
   }
   
 

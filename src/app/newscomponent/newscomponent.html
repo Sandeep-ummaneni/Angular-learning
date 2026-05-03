@@ -9,24 +9,14 @@
 
 @if (selectedNews) {
   <div class="overlay" (click)="closeModal()">
-
     <div class="modal" (click)="$event.stopPropagation()">
-
       <img [src]="selectedNews.image">
-
       <h2>{{ selectedNews.title }}</h2>
-
       <p>{{ selectedNews.description }}</p>
-
       <div class="actions">
-        <a [href]="selectedNews.url" target="_blank">
-          Read Full →
-        </a>
-
+        <a [href]="selectedNews.url" target="_blank">Read Full →</a>
         <button (click)="closeModal()">Close</button>
       </div>
-
     </div>
-
   </div>
 }
