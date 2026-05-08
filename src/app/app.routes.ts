@@ -28,6 +28,6 @@ export const routes: Routes = [
                 .then(c => c.Livestatus)
                     
                 }
-//   {path:"live", component: Livestatus}
+  //{path:"live", component: Livestatus}
             
 ];

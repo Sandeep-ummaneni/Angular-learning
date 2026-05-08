@@ -73,6 +73,7 @@
     "date": "2018-12-10"
   },
   {
+    "id": 10,
     "title":"What did Voyager 2 capture in its last image before its cameras fell silent?",
     "description": "This historic photograph became the last visual record from Voyager 2, taken before its cameras were permanently switched off to save the probe’s dwindling power.",
     "image": "https://cdn1.wionews.com/prod/wion/images/2025/20250828/image-1756389021929.jpg",
@@ -81,6 +82,7 @@
 
   },
   {
+    "id": 11,
     "title":"Voyager 1 has sent a message from a strange location in space 20,000 lakh km away that's as hot as 50,000°C, but without fire",
     "description":"NASA’s Voyager 1 and Voyager 2 spacecraft, launched in 1977, have identified a high-temperature region beyond the edge of the solar system. Scientists are now studying this area, nicknamed the firewall, which may lead to a new understanding of the solar system’s boundary and the magnetic connections between interstellar and solar space.",
     "image":"https://img.etimg.com/thumb/msid-123115841,width-650,height-488,imgsize-62706,resizemode-75/voyager-1.jpg",
@@ -88,6 +90,7 @@
     "date":"2025-08-05"
   },
   {
+    "id": 12,
     "title":"Last image of Solar System taken by Voyager-2. It was over 4.7 billion km away",
     "description":"Taken 36 years ago on August 28, 1989 this iconic image marked the final visual record sent back by Voyager 2 before its optical cameras were permanently shut off. Nasa shared the image to mark the anniversary.",
     "image":"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202508/voyager-2-last-image-neptune-280605572-16x9_0.jpg?VersionId=xW7VNeRIA2mPe0WEGWLyHKN6IxKrZTtK&size=690:388",

@@ -2,10 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import news from '../../assets/data/news.json'
+import { Custom } from '../custom';
 
 @Component({
   selector: 'app-newscomponent',
-  imports: [],
+  imports: [Custom],
   templateUrl: './newscomponent.html',
   styleUrl: './newscomponent.css',
 })
@@ -27,11 +28,13 @@ selectedNews: any = null;
     } else {
       this.selectedNews = null;    
     }
-  });
+      });
 }
+
 
   openModal(newsItem: any) {
     this.router.navigate(['/news', newsItem.id], {
+    
     });
   }
 

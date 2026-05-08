@@ -1,6 +1,6 @@
 <div class="news-grid">
   @for (news of newsdetails; track news.id) {
-    <div class="news-card" (click)="openModal(news)">
+    <div class="news-card" (click)="openModal(news)" appCustom>
       <img [src]="news.image">
       <h3>{{ news.title }}</h3>
     </div>

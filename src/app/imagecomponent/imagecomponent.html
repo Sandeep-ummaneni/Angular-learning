@@ -28,11 +28,19 @@
       <small>NASA / Voyager 1</small>
     </div>
   </div>
+    <h2 class="section-title">More Voyager Images</h2>
+  <div class="filters">
+  <button (click)="setFilter('voyager')">Voyager</button>
 
-  <h2 class="section-title">More Voyager Images</h2>
+<button (click)="setFilter('earth')">Earth</button>
+
+<button (click)="setFilter(null)">All</button>
+</div>
+
+
   <div class="image-grid">
-   @for (image of images; track image.id) {
-    <div class="image-card">
+   @for (image of filteredImages; track image.id) {
+    <div class="image-card" appCustom>
       <img [src]="image.imageUrl" [alt]="image.title" />
       <h3>{{ image.title }}</h3>
     </div>

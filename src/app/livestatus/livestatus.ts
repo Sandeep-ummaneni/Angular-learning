@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './livestatus.html',
   styleUrl: './livestatus.css',
 })
-export class Livestatus {}
+export class Livestatus {
+}
