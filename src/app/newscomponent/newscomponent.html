@@ -1,11 +1,28 @@
+<div class="search-container">
+
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    placeholder="🔍 Search Voyager News"
+    class="search-box"
+  />
+
+</div>
 <div class="news-grid">
-  @for (news of newsdetails; track news.id) {
+  @for (
+  news of newsdetails.filter(n =>
+    n.title.toLowerCase()
+    .includes(searchText.toLowerCase())
+  );
+  track news.id
+) {
     <div class="news-card" (click)="openModal(news)" appCustom>
       <img [src]="news.image">
       <h3>{{ news.title }}</h3>
     </div>
   }
 </div>
+
 
 @if (selectedNews) {
   <div class="overlay" (click)="closeModal()">

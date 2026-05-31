@@ -1,0 +1,186 @@
+<div class="main-container">
+
+  <div class="predictor-container">
+
+    <h1 class="predictor-title">
+      Voyager Distance Predictor
+    </h1>
+
+    <form
+      class="predictor-form"
+      [formGroup]="predictorForm"
+      (ngSubmit)="calculateDistance()"
+    >
+
+      <!-- SPACECRAFT -->
+      <select formControlName="spacecraft">
+
+        <option value="">
+          Select Spacecraft
+        </option>
+
+        <option value="Voyager 1">
+          Voyager 1
+        </option>
+
+        <option value="Voyager 2">
+          Voyager 2
+        </option>
+
+      </select>
+
+      @if (
+        predictorForm.controls.spacecraft.invalid &&
+        predictorForm.controls.spacecraft.touched
+      ) {
+        <div class="error-text">
+          Select a spacecraft
+        </div>
+      }
+
+      <!-- FORM ARRAY YEARS -->
+      <div formArrayName="years">
+
+        @for (
+          yearControl of years.controls;
+          track $index
+        ) {
+
+          <div class="slider-group">
+
+            <label>
+              Future Year:
+              {{ yearControl.value }}
+            </label>
+
+            <input
+              type="range"
+              min="2026"
+              max="2100"
+              step="1"
+              [formControlName]="$index"
+              class="year-slider"
+            >
+
+            @if (yearControl.errors?.['pastYear']) {
+              <div class="error-text">
+                Year must be current or future
+              </div>
+            }
+
+            @if (yearControl.errors?.['futureLimit']) {
+              <div class="error-text">
+                Maximum year is 2100
+              </div>
+            }
+
+            <button
+              type="button"
+              class="remove-btn"
+              (click)="removeYear($index)"
+            >
+              Remove
+            </button>
+
+          </div>
+
+        }
+
+      </div>
+
+      <!-- ADD YEAR -->
+      <button
+        type="button"
+        class="add-btn"
+        (click)="addYear()"
+      >
+        + Add Another Year
+      </button>
+
+      <!-- BUTTONS -->
+      <button
+        type="submit"
+        [disabled]="predictorForm.invalid"
+      >
+        Predict Distance
+      </button>
+
+      <button
+        type="button"
+        (click)="resetForm()"
+      >
+        Reset
+      </button>
+
+    </form>
+
+    <!-- RESULTS -->
+    @if (predictedResults.length > 0) {
+
+      <div class="result-box">
+
+        <h2>
+          Prediction Results
+        </h2>
+
+        @for (
+          result of predictedResults;
+          track result.year
+        ) {
+
+          <div class="result-item">
+
+            <h3>
+              Year: {{ result.year }}
+            </h3>
+
+            <p>
+              {{ result.distance }}
+              Billion km
+            </p>
+
+            <p>
+              {{ result.progress }}
+              % of 1 Light Year
+            </p>
+
+            <!-- SPACE PROGRESS -->
+            <div class="space-progress">
+
+              <div
+                class="voyager-indicator"
+                [style.left.%]="result.progress"
+              ></div>
+
+            </div>
+
+            <!-- SPACE LABELS -->
+            <div class="space-track">
+
+              <div class="track-line"></div>
+
+              <div class="label left">
+                🌍 Earth
+              </div>
+
+              <div class="label middle">
+                Voyager Path
+              </div>
+
+              <div class="label right">
+                ⭐ Deep Space
+              </div>
+
+            </div>
+
+          </div>
+
+        }
+
+      </div>
+
+    }
+
+  </div>
+
+</div>

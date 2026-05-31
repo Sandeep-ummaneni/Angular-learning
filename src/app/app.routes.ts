@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Dashboard } from './dashboard/dashboard';
 //import { Livestatus } from './livestatus/livestatus';
 import { Spacecraft } from './spacecraft/spacecraft';
+import {VoyagerDistance} from './voyager-distance/voyager-distance'
 
 export const routes: Routes = [
     { path: '', component: Dashboard ,
@@ -27,7 +28,7 @@ export const routes: Routes = [
                     import ('./livestatus/livestatus')
                 .then(c => c.Livestatus)
                     
-                }
-  //{path:"live", component: Livestatus}
+                },
+  {path:"distance", component: VoyagerDistance}
             
 ];

@@ -3,16 +3,17 @@ import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import news from '../../assets/data/news.json'
 import { Custom } from '../custom';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-newscomponent',
-  imports: [Custom],
+  imports: [Custom, FormsModule],
   templateUrl: './newscomponent.html',
   styleUrl: './newscomponent.css',
 })
 export class Newscomponent {
 
-
+searchText: string = '';
   newsdetails = news.newsdata;
 selectedNews: any = null;
 //filteredNews: any[] = [];
@@ -33,9 +34,7 @@ selectedNews: any = null;
 
 
   openModal(newsItem: any) {
-    this.router.navigate(['/news', newsItem.id], {
-    
-    });
+    this.router.navigate(['/news', newsItem.id]);
   }
 
 closeModal() {

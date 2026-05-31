@@ -1,54 +1,59 @@
 import { Component } from '@angular/core';
-//import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import json from '../../assets/data/imagedata.json';
-import {VoyagerImage} from '../image'
-import { Observable } from 'rxjs';
-import { Custom } from '../custom';
 import { ActivatedRoute, Router } from '@angular/router';
+
+import {
+  VoyagerImage,
+  VoyagerImageService
+} from '../voyager-image';
 
 @Component({
   selector: 'app-imagecomponent',
-  imports: [CommonModule,Custom],
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './imagecomponent.html',
   styleUrls: ['./imagecomponent.css'],
 })
 export class Imagecomponent {
 
+  images: VoyagerImage[] = [];
 
-
-  // imageData$! : Observable<any>;
-  // constructor (private images: VoyagerImage){
-  //   this.imageData$ = this.images.getimages();
-  // }
-
-
-
- images : any = json.voyagerImages;
-  filteredImages: any[] = this.images;
+  filteredImages: VoyagerImage[] = [];
 
   constructor(
+    private voyagerImageService: VoyagerImageService,
     private router: Router,
     private route: ActivatedRoute
   ) {}
 
   ngOnInit() {
 
+    this.images =
+      this.voyagerImageService.getImages();
+
+    this.filteredImages = this.images;
 
     this.route.queryParamMap.subscribe(params => {
 
       const type = params.get('type');
 
+      if (type === 'voyager') {
 
-      if (type) {
+        this.filteredImages = this.images.filter(
+          image =>
+            image.title.toLowerCase().includes('voyager')
+        );
 
-       this.filteredImages = this.images.filter((img: any) =>
-  img.title.toLowerCase().includes(type.toLowerCase())
-);
+      }
+      else if (type === 'earth') {
 
-      } else {
+        this.filteredImages = this.images.filter(
+          image =>
+            image.title.toLowerCase().includes('earth')
+        );
 
+      }
+      else {
 
         this.filteredImages = this.images;
 
@@ -61,13 +66,9 @@ export class Imagecomponent {
   setFilter(type: string | null) {
 
     this.router.navigate([], {
-      queryParams: { type },
+      queryParams: { type }
     });
 
   }
-
-
- 
- 
 
 }
