@@ -48,26 +48,24 @@ export class VoyagerDistance {
       Validators.required
     ),
 
-   years: new FormArray(
+    years: new FormArray(
 
-  [
-    new FormControl(
-      new Date().getFullYear(),
-      Validators.required
+      [
+        new FormControl(
+          new Date().getFullYear(),
+          Validators.required
+        )
+      ],
+
+      [voyagerYearValidator]
+
     )
-  ],
-
-  [voyagerYearValidator]
-
-)
 
   });
 
   predictedResults: any[] = [];
 
-  /* =========================
-     FORM ARRAY GETTER
-  ========================= */
+ 
 
   get years(): FormArray {
 
@@ -75,26 +73,28 @@ export class VoyagerDistance {
 
   }
 
-  /* =========================
-     ADD YEAR
-  ========================= */
+ 
 
   addYear() {
 
-  this.years.push(
+    const lastYear = Number(
+      this.years.at(
+        this.years.length - 1
+      ).value
+    );
 
-    new FormControl(
-      new Date().getFullYear(),
-      Validators.required
-    )
+    this.years.push(
 
-  );
+      new FormControl(
+        Math.min(lastYear + 1, 2100),
+        Validators.required
+      )
 
-}
+    );
 
-  /* =========================
-     REMOVE YEAR
-  ========================= */
+  }
+
+ 
 
   removeYear(index: number) {
 
@@ -106,9 +106,8 @@ export class VoyagerDistance {
 
   }
 
-  /* =========================
-     CALCULATE DISTANCE
-  ========================= */
+
+
 
   calculateDistance() {
 
@@ -170,16 +169,13 @@ export class VoyagerDistance {
 
     });
 
-    // Sort results by year
     this.predictedResults.sort(
       (a, b) => a.year - b.year
     );
 
   }
 
-  /* =========================
-     RESET FORM
-  ========================= */
+
 
   resetForm() {
 
@@ -190,9 +186,9 @@ export class VoyagerDistance {
     this.years.push(
 
       new FormControl(
-  new Date().getFullYear(),
-  Validators.required
-)
+        new Date().getFullYear(),
+        Validators.required
+      )
 
     );
 

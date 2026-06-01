@@ -19,4 +19,5 @@ export function voyagerYearValidator(
   return uniqueYears.size !== years.length
     ? { duplicateYears: true }
     : null;
+
 }

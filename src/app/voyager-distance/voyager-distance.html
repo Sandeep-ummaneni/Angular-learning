@@ -12,7 +12,7 @@
       (ngSubmit)="calculateDistance()"
     >
 
-      <!-- SPACECRAFT -->
+      
       <select formControlName="spacecraft">
 
         <option value="">
@@ -33,12 +33,14 @@
         predictorForm.controls.spacecraft.invalid &&
         predictorForm.controls.spacecraft.touched
       ) {
+
         <div class="error-text">
           Select a spacecraft
         </div>
+
       }
 
-      <!-- FORM ARRAY YEARS -->
+      
       <div formArrayName="years">
 
         @for (
@@ -62,18 +64,6 @@
               class="year-slider"
             >
 
-            @if (yearControl.errors?.['pastYear']) {
-              <div class="error-text">
-                Year must be current or future
-              </div>
-            }
-
-            @if (yearControl.errors?.['futureLimit']) {
-              <div class="error-text">
-                Maximum year is 2100
-              </div>
-            }
-
             <button
               type="button"
               class="remove-btn"
@@ -88,7 +78,18 @@
 
       </div>
 
-      <!-- ADD YEAR -->
+      
+      @if (
+        years.errors?.['duplicateYears']
+      ) {
+
+        <div class="error-text">
+          Duplicate years are not allowed
+        </div>
+
+      }
+
+      
       <button
         type="button"
         class="add-btn"
@@ -97,7 +98,7 @@
         + Add Another Year
       </button>
 
-      <!-- BUTTONS -->
+     
       <button
         type="submit"
         [disabled]="predictorForm.invalid"
@@ -114,7 +115,7 @@
 
     </form>
 
-    <!-- RESULTS -->
+    
     @if (predictedResults.length > 0) {
 
       <div class="result-box">
