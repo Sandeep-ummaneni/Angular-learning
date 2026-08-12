@@ -52,6 +52,16 @@
   font-weight: bold;
 }
 
+mission-status-card {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.element-placeholder {
+  margin: 0 0 20px;
+  color: rgba(220, 231, 255, 0.85);
+}
+
 /* FORM */
 
 .predictor-form {

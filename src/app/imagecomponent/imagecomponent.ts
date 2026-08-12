@@ -1,6 +1,12 @@
-import { Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnDestroy,
+  OnInit
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
 
 import {
   VoyagerImage,
@@ -9,16 +15,18 @@ import {
 
 @Component({
   selector: 'app-imagecomponent',
-  standalone: true,
   imports: [CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './imagecomponent.html',
   styleUrls: ['./imagecomponent.css'],
 })
-export class Imagecomponent {
+export class Imagecomponent implements OnInit, OnDestroy {
 
   images: VoyagerImage[] = [];
 
   filteredImages: VoyagerImage[] = [];
+
+  private readonly destroy$ = new Subject<void>();
 
   constructor(
     private voyagerImageService: VoyagerImageService,
@@ -33,33 +41,35 @@ export class Imagecomponent {
 
     this.filteredImages = this.images;
 
-    this.route.queryParamMap.subscribe(params => {
+    this.route.queryParamMap
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(params => {
 
-      const type = params.get('type');
+        const type = params.get('type');
 
-      if (type === 'voyager') {
+        if (type === 'voyager') {
 
-        this.filteredImages = this.images.filter(
-          image =>
-            image.title.toLowerCase().includes('voyager')
-        );
+          this.filteredImages = this.images.filter(
+            image =>
+              image.title.toLowerCase().includes('voyager')
+          );
 
-      }
-      else if (type === 'earth') {
+        }
+        else if (type === 'earth') {
 
-        this.filteredImages = this.images.filter(
-          image =>
-            image.title.toLowerCase().includes('earth')
-        );
+          this.filteredImages = this.images.filter(
+            image =>
+              image.title.toLowerCase().includes('earth')
+          );
 
-      }
-      else {
+        }
+        else {
 
-        this.filteredImages = this.images;
+          this.filteredImages = this.images;
 
-      }
+        }
 
-    });
+      });
 
   }
 
@@ -68,6 +78,14 @@ export class Imagecomponent {
     this.router.navigate([], {
       queryParams: { type }
     });
+
+  }
+
+  ngOnDestroy() {
+
+    this.destroy$.next();
+
+    this.destroy$.complete();
 
   }
 

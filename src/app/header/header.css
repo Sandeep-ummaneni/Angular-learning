@@ -69,3 +69,30 @@ h1 {
   background: #5ba3f5;
   border-radius: 2px;
 }
+
+.lang-btn {
+  border: 1px solid rgba(106, 143, 226, 0.5);
+  border-radius: 6px;
+  background: rgba(17, 31, 68, 0.7);
+  color: #dbe8ff;
+  height: 30px;
+  min-width: 38px;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: #3a74cf;
+  color: #fff;
+}
+
+.auth-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(87, 164, 255, 0.35);
+  color: #d8e7ff;
+  padding: 4px 12px;
+  font-size: 12px;
+  height: 30px;
+}

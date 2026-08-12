@@ -1,7 +1,11 @@
 <div class="iframe-container">
 <!-- <iframe src="https://eyes.nasa.gov/apps/solar-system/#/sc_voyager_1" allowfullscreen ></iframe> -->
 <!-- <iframe src="https://eyes.nasa.gov/apps/solar-system/#/sc_voyager_1"></iframe>  -->
- <iframe src="https://eyes.nasa.gov/apps/solar-system/#/sc_voyager_1?detailPanel=false&collapseSettingsOptions=true" allowfullscreen ></iframe>
+ @defer (on idle) {
+  <iframe src="https://eyes.nasa.gov/apps/solar-system/#/sc_voyager_1?detailPanel=false&collapseSettingsOptions=true" allowfullscreen ></iframe>
+ } @placeholder {
+  <p>Preparing live status...</p>
+ }
 </div>
 
 

@@ -2,5 +2,9 @@
    <h2 #v1 class="v1">Voyager 1</h2>
     <h2 #v2 class="v2">Voyager 2</h2>
 </app-content>
-<app-voyager></app-voyager>
+@defer (on viewport) {
+  <app-voyager></app-voyager>
+} @placeholder {
+  <p>Loading mission cards...</p>
+}
 <router-outlet></router-outlet>

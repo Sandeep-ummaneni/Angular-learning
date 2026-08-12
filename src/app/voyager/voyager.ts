@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import  {VoyagerCard} from '../voyager-card/voyager-card';
 @Component({
@@ -7,6 +7,7 @@ import  {VoyagerCard} from '../voyager-card/voyager-card';
   standalone:true,
   templateUrl: './voyager.html',
   styleUrl: './voyager.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 

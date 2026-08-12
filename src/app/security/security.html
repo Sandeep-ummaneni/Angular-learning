@@ -1,0 +1,22 @@
+<section class="security-shell">
+  <h2>{{ labels().security }}</h2>
+  <p>Simple JWT demo for route guards and interceptor usage.</p>
+
+  <input
+    [ngModel]="tokenInput()"
+    (ngModelChange)="tokenInput.set($event)"
+    placeholder="Enter any token"
+    class="token-input"
+  >
+
+  <div class="button-row">
+    <button type="button" (click)="saveToken()">Save Token</button>
+    <button type="button" (click)="useDemoToken()">Use Demo Token</button>
+    <button type="button" (click)="clearToken()">Clear Token</button>
+  </div>
+
+
+
+  <p class="status-text">Auth state: {{ isAuthenticated() ? 'Authenticated' : 'Guest' }}</p>
+  <p class="hint-text">Signals power this page and header state. NewsStateService still shows the BehaviorSubject approach.</p>
+</section>

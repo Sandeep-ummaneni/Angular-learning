@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 
@@ -23,7 +23,8 @@ import { voyagerYearValidator } from '../voyager-distance/voyager-year.validator
     RouterModule
   ],
   templateUrl: './voyager-distance.html',
-  styleUrls: ['./voyager-distance.css']
+  styleUrls: ['./voyager-distance.css'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class VoyagerDistance {
 

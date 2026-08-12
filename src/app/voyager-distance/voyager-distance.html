@@ -6,6 +6,15 @@
       Voyager Distance Predictor
     </h1>
 
+    @defer (on idle) {
+      <mission-status-card
+        data-title="Angular Element Demo"
+        data-text="Custom element rendered on the Distance Tool page."
+      ></mission-status-card>
+    } @placeholder {
+      <p class="element-placeholder">Loading element demo...</p>
+    }
+
     <form
       class="predictor-form"
       [formGroup]="predictorForm"

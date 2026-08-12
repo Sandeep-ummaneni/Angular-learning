@@ -1,7 +1,7 @@
 <div class="timeline" #container>
   <h4>Mission Timeline</h4>
 
-  @for (item of timeline; track item.planet; let last = $last) {
+  @for (item of timeline; track item.date; let last = $last) {
     <div class="timeline-item"   [class]="selectedPlanet === item.date ? 'item-active' : 'item-other'" (click)="onSelectMission(item)">
 
       <div class="dot"></div>
